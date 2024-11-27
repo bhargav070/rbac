@@ -33,8 +33,8 @@ const Dashboard = () => {
     <div>
       <h1 className="main-heading">Admin Dashboard</h1>
       <div className="dashboard">
-        <UserManagement users={users} setUsers={setUsers} roles={roles} />
         <RoleManagement roles={roles} setRoles={setRoles} />
+        <UserManagement users={users} setUsers={setUsers} roles={roles} />
       </div>
     </div>
   );
