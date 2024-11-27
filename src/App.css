@@ -1,38 +1,256 @@
-.App {
-  text-align: center;
+/* General styling */
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #333;
+    padding: 2rem;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    /* width: 70%; */
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-heading {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    background-color: #007bff;
+    font-size: 2rem;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn {
+    height: 3rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
   }
+
+/* User Management */
+.user-management {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
-.App-link {
-  color: #61dafb;
+.table th, .table td {
+    padding: 10px 15px;
+    text-align: left;
+    vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td button {
+    margin: 0 5px;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-footer .btn {
+    width: 100px;
+}
+
+/* Role Management */
+.role-management {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  
+  .roles-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
   }
+
+  
+  .input-role {
+    padding: 10px;
+    /* font-size: 1rem; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+  .add-role-btn {
+    /* display: block; */
+    /* width: 100%; */
+    padding: 9px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-role-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .permissions {
+    padding: 20px;
+  }
+  
+  .permissions h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-item input {
+    margin-right: 10px;
+  }
+  
+  
+  
+  .roles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .role-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+  }
+  
+  .role-title {
+    text-align: center;
+    text-transform:capitalize;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .permissions-list {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .permissions-list ul {
+    padding-left: 0;
+  }
+  
+  .permissions-list li {
+    list-style: none;
+    margin: 0;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .buttons {
+    width: 50%;
+    margin: 8px;
+  }
+  
+  .delete-role-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .delete-role-btn:hover {
+    background-color: #b52a3b;
+  }
+  
+@media (max-width: 768px) {
+    .user-management, .role-management {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .table td, .table th {
+        font-size: 0.9rem;
+    }
+
+
+
+    .roles-list {
+        display: block;
+    }
+
+    .role-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .user-management, .role-management {
+        width: 100%;
+        margin: 0;
+    }
+
+    .user-management h3, .role-management h3 {
+        font-size: 1.2rem;
+    }
+
+    
 }
