@@ -1,7 +1,3 @@
-Here’s a **sophisticated and detailed README** for your RBAC project, tailored for GitHub:
-
----
-
 # **Role-Based Access Control (RBAC) System**
 
 A comprehensive **Role-Based Access Control (RBAC)** dashboard for managing users, roles, and permissions efficiently and securely. This application is designed to simplify administrative tasks while adhering to core RBAC principles, ensuring that only authorized users can perform specific actions.
