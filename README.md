@@ -36,6 +36,11 @@ A comprehensive **Role-Based Access Control (RBAC)** dashboard for managing user
 - Structured error handling to ensure robustness.
 
 ---
+![Screenshot 2024-11-27 181204](https://github.com/user-attachments/assets/dca8163e-dcb6-42c4-abcd-1e441d3e2730)
+
+![Screenshot 2024-11-27 181505](https://github.com/user-attachments/assets/50ddd4ee-c797-4548-a7d2-ce83a715d50b)
+
+![Screenshot 2024-11-27 181533](https://github.com/user-attachments/assets/b7046d27-1e2b-4ff2-b61f-ee24cba892bf)
 
 ## **How It Works**
 
